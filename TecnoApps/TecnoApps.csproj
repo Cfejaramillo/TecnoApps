@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="Pages\Contacto\" />
-    <Folder Include="Pages\Servicios\" />
   </ItemGroup>
 
 </Project>
