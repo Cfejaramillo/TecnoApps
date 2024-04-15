@@ -7,12 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Contacto\Contacto.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Pages\Api\" />
-    <Folder Include="Pages\Contacto\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="8.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Pages\Contacto\Contacto.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Contacto\Contacto.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Pages\Contacto\Contacto.cshtml" />
   </ItemGroup>
 
 </Project>
