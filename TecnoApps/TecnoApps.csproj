@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <Folder Include="Pages\Api\" />
+    <Folder Include="wwwroot\Login\" />
   </ItemGroup>
 
   <ItemGroup>
