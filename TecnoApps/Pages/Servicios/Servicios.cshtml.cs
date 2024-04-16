@@ -3,10 +3,13 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace TecnoApps.Pages.Servicios
 {
-    public class ServiciosModel : PageModel
+    public class ServicesModel : PageModel
     {
-        public void OnGet()
+        private readonly ILogger<ServicesModel> _logger;
+
+        public ServicesModel(ILogger<ServicesModel> logger)
         {
+            _logger = logger;
         }
     }
 }

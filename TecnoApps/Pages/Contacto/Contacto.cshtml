@@ -1,0 +1,125 @@
+﻿@page
+@model TecnoApps.Pages.Contacto.ContactoModel
+@{
+}
+
+<section class="py-5">
+    <div class="container px-5">
+        <!-- Contact form-->
+        <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-3">
+            <div class="text-center mb-5">
+
+                <h1 class="fw-bolder">¿Tienes un proyecto en mente?</h1>
+                <p class="fs-4 mb-0">
+                    Si tienes alguna pregunta, comentario o solicitud, completa nuestro formulario de contacto, envíanos un email o llámanos por teléfono. Nuestro equipo estará encantado de atenderte a la brevedad posible.
+                </p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                   
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- input nombre-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <label for="name">Nombre</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- input correo electronico-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">Correo Electronico</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- input celular-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                            <label for="phone">Celular</label>
+                            <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                        </div>
+                        <!-- input Cuéntanos sobre tu proyecto-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Cuéntanos sobre tu proyecto</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div>
+                        <!-- Enviar mensaje de éxito-->
+                        <!---->
+                        <!-- Esto es lo que sus usuarios verán cuando el formulario-->
+                        <!-- se ha enviado correctamente-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Form submission successful!</div>
+                                To activate this form, sign up at
+                                <br />
+                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button></div>
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+            <div class="col-md-12 col-lg-12">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="row ">
+                        <div class=" ">
+                            <div class="col-md-12 col-lg-12">
+                                <h2 class="list-contacts--tittle">Contáctanos</h2>
+                            </div>
+                            <div class=" col-md-12 col-lg-12 fs-4">
+                                <div class="contacts-email--admin">
+                                    <div class="email_admin email-1">
+                                        <i class="fa-solid fa-envelope mr-5"></i>
+                                        <span> sbarona@poligran.edu.co</span>
+                                    </div>
+                                    <div class="icon_phone">
+                                        <i class="fa-solid fa-phone mr-5"></i>
+                                        <span> 3166288362</span>
+                                    </div>
+                                    <div class="email_admin email-2">
+                                        <i class="fa-solid fa-envelope mr-5"></i>
+                                        <span> jalfgomez@poligran.edu.co</span>
+                                    </div>
+                                    <div class="icon_phone">
+                                        <i class="fa-solid fa-phone mr-5"></i>
+                                        <span> 3134014570</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            
+                            <div class="col-md-12 col-lg-12">
+                                <p class="text-list-contacts">También puedes hacerlo a través de nuestras redes sociales:</p>
+                                <a href="#" class="fs-1 p-4"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="#" class="fs-1 p-4"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="fs-1 p-4"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="fs-1 p-4"><i class="fa-brands fa-twitter"></i></a>
+                                <a href="#" class="fs-1 p-4"><i class="fa-brands fa-linkedin"></i></a>
+                              @*   <ul class="list-contacts--networks">
+                                    <li><a href=""><img src="./assets/icons/logo-whatsapp 1.svg" alt="Icono whatsapp"></a></li>
+                                    <li><a href=""><img src="./assets/icons/logo-facebook 1.svg" alt="Icono facebook"></a></li>
+                                    <li><a href=""><img src="./assets/icons/logo-instagram 1.svg" alt="Icono instagram"></a></li>
+                                    <li><a href=""><img src="./assets/icons/logo-twitter 1.svg" alt="Icono twitter"></a></li>
+                                    <li><a href=""><img src="./assets/icons/logo-linkedin 1.svg" alt="Icono linkedin"></a></li>
+                                </ul> *@
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       
+    </div>
+</section>

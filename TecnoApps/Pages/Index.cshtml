@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Home page";
 }
+@* este es el encabezado de la pagina  *@
 <header class=" py-5 hea">
     <div class="container px-5">
         <div class="row gx-5 align-items-center justify-content-center">
@@ -53,32 +54,51 @@
     </div>
 </header>
 
-<!-- Features section-->
+<!-- Servicios section-->
 <section class="py-5" id="features">
     <div class="container px-5 my-5">
-        <div class="row gx-5">
-            <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">A better way to start building.</h2></div>
-            <div class="col-lg-8">
-                <div class="row gx-5 row-cols-1 row-cols-md-2">
-                    <div class="col mb-5 h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+        <div class="row gx-5 align-items-center justify-content-center">
+            <div class="col-lg-12">
+                <h2 class="fw-bolder mb-0"><ins>Nuestros servicios</ins></h2>
+                <p class="fs-4 mb-0">En TecnoApps ofrecemos una amplia gama de servicios, ya sea que necesites una aplicación móvil atractiva, un sitio web dinámico o una interfaz de usuario intuitiva, nuestro equipo cuenta con las habilidades y la experiencia para hacer realidad tus ideas y superar tus expectativas. </p>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="row ">
+
+                    <div class="col-sm-6 col-md-6 col-lg-6  ">
+                        <div class="d-flex align-items-center flex-column rounded-start-5 m-4"
+                             style="background-color:#fbbe01; min-height:650px">
+                            <h3 class="pt-3">Desarrollo de apps móviles</h3>
+
+                            <img src="~/imagen/desarrollo apps.jpg" style="width:400px" class="rounded-5" />
+                            <p class="p-4 mb-0">Nuestro equipo está capacitado para crear aplicaciones móviles de primera clase para Android, iOS, híbridas y multiplataforma. Ya sea que estés buscando una aplicación para impulsar tu negocio o una experiencia móvil única para tus usuarios, estamos aquí para ayudarte a alcanzar tus metas. </p>
+                        </div>
                     </div>
-                    <div class="col mb-5 h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                    <div class="col-sm-6 col-md-6 col-lg-6  ">
+                        <div class="d-flex align-items-center flex-column rounded-end-5 m-4" style="background-color:#61bfe5; min-height:650px">
+                            <h3 class="pt-3">
+                                Desarrollo web</h3>
+                                <img src="~/imagen/desarrollo web.jpg" style="width:400px" class="rounded-5" />
+                                <p class="p-4 mb-0">Construimos aplicaciones web robustas y escalables que ofrecen una experiencia de usuario excepcional en todos los dispositivos y navegadores. Nuestro enfoque centrado en el usuario garantiza que tus visitantes tengan una experiencia fluida y atractiva en línea. </p>
+                        </div>
                     </div>
-                    <div class="col mb-5 mb-md-0 h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6  ">
+                        <div class="d-flex align-items-center flex-column rounded-start-5 m-4" style="background-color:#61bfe5; min-height:650px">
+                            <h3 class="pt-3">Diseño UI/UX</h3>
+                            <img src="~/imagen/desarrollo web.jpg" style="width:400px" class="rounded-5" />
+                            <p class=" p-4 mb-0">Nos especializamos en el diseño de interfaces de usuario intuitivas y atractivas que hacen que tus aplicaciones y sitios web destaquen entre la multitud. Nuestro enfoque en la experiencia del usuario garantiza que cada interacción sea fluida, eficiente y memorable para tus usuarios. </p>
+                        </div>
                     </div>
-                    <div class="col h-100">
-                        <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                        <h2 class="h5">Featured title</h2>
-                        <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                    <div class="col-sm-6 col-md-6 col-lg-6  ">
+                        <div class="d-flex align-items-center flex-column rounded-end-5 m-4"
+                             style="background-color:#fbbe01; min-height:650px">
+                            <h3 class="pt-3">Tienda online</h3>
+
+                            <img src="~/imagen/desarrollo apps.jpg" style="width:400px" class="rounded-5" />
+                            <p class="p-4 mb-0">Creamos plataformas de comercio electrónico completas y fáciles de usar que te permiten llevar tu negocio al mundo digital. Desde la creación de una tienda virtual atractiva hasta la integración de herramientas de gestión de inventario y sistemas de pago seguros, nos encargamos de todos los aspectos para que puedas vender tus productos en línea con confianza y eficiencia. </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,18 +106,40 @@
     </div>
 </section>
 <!-- Testimonial section-->
-<div class="py-5 bg-light">
+<div class="py-5 bg-light overflow-auto" style="max-height:400px">
     <div class="container px-5 my-5">
         <div class="row gx-5 justify-content-center">
-            <div class="col-lg-10 col-xl-7">
+            <h3 class="fw-bolder mb-4"><ins>Testimonios de nuestros clientes </ins></h3>
+            <div class="col-lg-10 col-xl-9 mb-5">
                 <div class="text-center">
-                    <div class="fs-4 mb-4 fst-italic">"Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"</div>
+                    <div class="fs-5 mb-4 fst-italic">"Estoy impresionado con el servicio de TecnoApps. Su equipo fue increíblemente receptivo a mis necesidades y desarrollaron una aplicación móvil que superó mis expectativas. ¡Gracias a ellos, mi negocio ha experimentado un aumento significativo en las descargas y la interacción del usuario! Definitivamente los recomendaría a cualquiera que esté buscando soluciones digitales de calidad."</div>
                     <div class="d-flex align-items-center justify-content-center">
                         <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
                         <div class="fw-bold">
-                            Tom Ato
-                            <span class="fw-bold text-primary mx-1">/</span>
-                            CEO, Pomodoro
+                            Juan Pérez 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-xl-9 mb-5">
+                <div class="text-center">
+                    <div class="fs-5 mb-4 fst-italic">"¡El equipo de TecnoApps hizo un trabajo excepcional con nuestro sitio web! Estaba buscando una plataforma dinámica y fácil de usar para mi empresa de marketing, y ellos entregaron exactamente eso. La comunicación fue clara y fluida durante todo el proceso, y estoy muy contenta con el resultado final. ¡Gracias, TecnoApps!"</div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                        <div class="fw-bold">
+                            María Rodríguez
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-xl-9 mb-5">
+                <div class="text-center">
+                    <div class="fs-5 mb-4 fst-italic">"Contratamos a TecnoApps para diseñar nuestra nueva interfaz de usuario y quedamos muy impresionados con su profesionalismo y habilidades creativas. El equipo comprendió perfectamente nuestras necesidades y nos proporcionó un diseño moderno y funcional que ha recibido elogios de nuestros clientes. ¡Definitivamente volveremos a trabajar con ellos en el futuro!"</div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                        <div class="fw-bold">
+                            Luis Gómez
                         </div>
                     </div>
                 </div>
@@ -105,8 +147,42 @@
         </div>
     </div>
 </div>
-<!-- Blog preview section-->
+<!-- Accion section-->
 <section class="py-5">
+    <div class="container px-5 my-5">
+        <div class="row gx-5">
+            <div class="col-lg-6 mb-5">
+                <div class="my-5 text-left text-xl-start ">
+                    <p class="lead fw-normal fs-3 text-black-60 mb-4">
+                        ¿Ya eres nuestro cliente? Ingresa al portal de clientes para que puedas acceder a todos los productos y servicios que tienes contratados con TecnoApps.
+                    </p>
+
+                </div>
+                <div class=" d-flex  justify-content-sm-center justify-content-xl-center ">
+                   
+                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Portal clientes</a>
+
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5">
+                <div class="my-5 text-left text-xl-start ">
+                    <p class="lead fw-normal fs-3 text-black-60 mb-4">
+                        ¿Deseas ser nuestro cliente? contáctanos y regístrate para que para que comiences a disfrutar de todos los beneficios y soluciones que ofrecemos en TecnoApps.
+                    </p>
+
+                </div>
+                <div class=" d-flex justify-content-sm-center justify-content-xl-center ">
+                  
+                    <a class="btn btn-primary btn-lg m-3" href="#features">Contactanos</a>
+                    <a class="btn btn-primary btn-lg m-3" href="#features">Registrate</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@* <section class="py-5">
     <div class="container px-5 my-5">
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-8 col-xl-6">
@@ -198,7 +274,7 @@
             </div>
         </aside>
     </div>
-</section>
+</section> *@
 
 
 
