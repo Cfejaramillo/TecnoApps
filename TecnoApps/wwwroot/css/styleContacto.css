@@ -1,0 +1,204 @@
+/* Se quita el margin y padding que tiene por defecto globalmente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Se crean variables para los colores de uso general */
+:root {
+  --gray-header: #4E5166;
+  --gray-text-nav: #ECE8EF;
+  --green-form: #C3E8BD;
+  --green-botton: #31E981;
+}
+
+/*Se establece el tamaño de fuene para uso de rem y la tipografia*/
+html {
+  font-size: 62.5%;
+  font-family: "Mulish", sans-serif;
+}
+
+/* Estilos header */
+header {
+  background-color: var(--gray-header);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+
+}
+header .header-img_logo {
+  width: 302px;
+  height: 92px;
+  margin: 20px 40px;
+}
+.header-nav {
+  font-size: 1.8rem;
+  color: var(--gray-text-nav);
+  line-height: 14.6px;
+  margin: 10px 60px 40px 0;
+}
+.header-nav-linkadmin {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 10px 14px 20px;
+
+}
+.header-nav-linkadmin img {
+  width: 25px;
+  padding-left: 4px;
+  cursor: pointer;
+}
+.nav-list {
+  display: flex;  
+  list-style: none;
+}
+.nav-list li{
+  padding: 0 20px;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: var(--gray-text-nav);
+}
+/* Estilos contenido vista contactos */
+main {
+  margin: 24px 0;
+}
+.main-contacts {
+  width: 90%;
+  margin: 0 auto;
+}
+.main-contacts--text{
+  width: 100%;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  padding: 0 50px;
+  
+}
+.contacts-tittle {
+  line-height: 70px;
+  font-size: 4rem;
+}
+.main-contacts--text p {
+  padding: 10px;
+  font-size: 3rem;
+}
+.main-form {
+  width: 926px;
+  height: 929px;
+  margin: 0 auto;
+  background-color: var(--green-form);
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+.main-form--container{
+  margin: 24px;
+}
+.main-form fieldset {
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+  border: none;
+}
+.main-form fieldset label {
+  padding-left: 12px;
+}
+.main-form fieldset input {
+  width: 661px;
+  height: 64px;
+  border-radius: 15px;
+  border: none;
+}
+.main-form-message textarea {
+  width: 661px;
+  height: 317px;
+  border: none;
+  border-radius: 15px;
+}
+.imput_contacts {
+  width: 258px;
+  height: 57px;
+  background-color: var(--green-botton);
+  font-size: 3.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  margin: 24px auto;
+  cursor: pointer;
+}
+.list-contacts {
+  width: 100%;
+  text-align: center;
+}
+.list-contacts--tittle {
+  font-size: 4rem;
+  margin-top: 24px;
+}
+.contacts-email--admin,
+.contacts-phone--admin,
+.text-list-contacts {
+  font-size: 2.6rem;
+}
+.email_admin, .icon_phone {
+  display: flex;
+  justify-content: center;
+  margin: 8px 0;
+}
+.email_admin p, .icon_phone p {
+  margin-left: 10px;
+}
+.list-contacts--networks {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.list-contacts--networks li {
+  margin: 14px;
+}
+
+/* Estilos Footer */
+footer {
+  background-color: var(--gray-header);
+  color: white;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 500px; 
+  padding: 34px;
+  font-size: 2.2rem;
+}
+.footer-info-apps p {
+  width: 381px;
+  text-align: center;
+  margin-top: 34px;
+}
+.footer-info--service h3,
+.footer-info--contacts h3 {
+  font-size: 3rem;
+  text-align: center;
+}
+.footer-list--service,
+.footer-list--contacts {
+  list-style: none;
+  text-align: center;
+}
+.footer-list--service li,
+.footer-list--contacts li {
+  margin: 24px 0;
+}
+.footer-copyright {
+  font-size: 2.2rem;
+  text-align: center;
+  padding-bottom: 8px;
+}

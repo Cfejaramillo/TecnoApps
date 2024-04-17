@@ -20,3 +20,10 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.bg-login-image {
+    
+    background: url('../imagen/icon.png');
+    background-position: center;
+    background-size: cover;
+}
